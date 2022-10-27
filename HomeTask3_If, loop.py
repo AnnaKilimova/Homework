@@ -6,9 +6,9 @@ b = int(input('Enter a number b:'))
 c = int(input('Enter a number c:'))
 
 if a > 10 and a % 3 == 0 and b > 10 and b % 3 == 0 and c > 10:
-    print('correct')
+    print('yes')
 else:
-    print('incorrect')
+    print('no')
 
 #Пользователь вводит с клавиатуры три числа в переменные a, b, c. Найдите наибольшее число из них и запишите в переменную max.
 
