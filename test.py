@@ -1,15 +1,24 @@
-# Пользователь вводит два числа A и B, нужно вывести сумму всех четных чисел в диапазоне от A до B.
+# 1 Вывести треугольник #1 с шириной N с помощью цикла while
 
-a = int(input('Enter a number a:'))
-b = int(input('Enter a number b:'))
-sum = 0
+n = int(input('Enter n: '))
 
-while a <= b:
-    if a % 2 != 0:
-        a += 1
-        continue
-    else:
-        sum += a
-        a += 1
-print(sum)
+k = n
+i = 0
 
+print('1)')
+
+while i < k:
+    print('*' * k)
+    k -= 1
+
+print(n)
+# 2 Вывести треугольник #2 с шириной N с помощью цикла while
+
+k = n
+i = 1
+
+print('2)')
+
+while i <= n:
+    print('*' * i)
+    i += 1
