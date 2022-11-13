@@ -2,7 +2,7 @@
 
 f = open('data.txt', 'r')
 
-data = f.readline().split()
+data = f.read().split()
 
 numbers = []
 

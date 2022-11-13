@@ -83,4 +83,9 @@ with open('contacts.json', 'r') as f:
 print(from_file)
 
 
-
+# # Преобразование элементов списка к строке
+# a = random.sample(range(1000), 100)
+# a = "\n".join(map(str, a))
+#
+# print(type(a[0]))
+# print(a)
