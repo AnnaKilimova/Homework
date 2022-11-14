@@ -49,6 +49,41 @@ contacts = {
     }
 }
 
+print(contacts)
+
+contacts.update({
+    'key' : 'value',
+    'Andrii' : 'Anna'
+})
+
+print(contacts)
+
+# for contact in contacts:
+#     print(contact, "=", contacts[contact])
+#
+# #или
+
+# for key, value in contacts.items():
+#     print(key, "=", value)
+
+# for idx, value in enumerate(contacts):
+#     print(idx, value)
+
+# key, value = list(contacts.items())[0]
+# print(key, value)
+
+# for value in contacts.values():
+#     print(value)
+#
+# new_contacts = contacts.fromkeys([1, 2, 3, 4], 'default')
+# print(new_contacts)
+
+# new_contacts = dict.fromkeys([1, 2, 3, 4], 'default')
+# print(new_contacts)
+
+# print(contacts.get('Sasha', 'значение для замены несуществующего'))
+
+
 # print(contacts)
 
 # with open('contacts.txt', 'w') as f:
@@ -73,14 +108,14 @@ contacts = {
 #     #from_file = pickle.load(f)
 # print(from_file)
 
-import json
-
-with open('contacts.json', 'w') as f:
-    json.dump(contacts, f)
-
-with open('contacts.json', 'r') as f:
-    from_file = json.loads(f.read())
-print(from_file)
+# import json
+#
+# with open('contacts.json', 'w') as f:
+#     json.dump(contacts, f)
+#
+# with open('contacts.json', 'r') as f:
+#     from_file = json.loads(f.read())
+# print(from_file)
 
 
 # # Преобразование элементов списка к строке
