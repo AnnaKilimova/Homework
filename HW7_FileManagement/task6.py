@@ -1,10 +1,10 @@
 #Задание 6. Дан файл в котором записаны числа через пробел, необходимо вывести пользователю сумму этих чисел
 
-a = 0
-
-f = open('data.txt', 'r')
+f = open('data_only_numbers.txt', 'r')
 
 data = list(map(int, f.read().split()))
+
+a = 0
 
 for i in range(len(data)):
     a += data[i]

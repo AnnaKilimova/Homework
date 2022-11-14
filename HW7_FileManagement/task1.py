@@ -1,6 +1,6 @@
 # Задание 1. Дан файл с произвольным текстом, необходимо найти все числа в файле и записать в список numbers
 
-f = open('data.txt', 'r')
+f = open('data_numbers.txt', 'r')
 
 data = f.read().split()
 

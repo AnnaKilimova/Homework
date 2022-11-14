@@ -1,4 +1,4 @@
-# f = open('data.txt', 'r')
+# f = open('data_text.txt', 'r')
 #
 # data = f.readline()
 #
@@ -10,7 +10,7 @@
 
 # f.close()
 
-# f = open('data.txt', 'w')
+# f = open('data_text.txt', 'w')
 # # f.write('Hello world\n')
 # f.writelines(['Hello world\n', 'Hello world\n', 'Hello world\n'])
 # f.close()
@@ -19,16 +19,16 @@
 # f.write('Hello world\n')
 # f.close()
 
-# f = open('data.txt', '')
+# f = open('data_text.txt', '')
 # f.writelines(['Hello world\n', 'Hello world\n', 'Hello world\n'])
 # f.close()
 
-# f = open('data.txt', 'ab')
+# f = open('data_text.txt', 'ab')
 # # f.write(b'\nHello world\n')
 # f.writelines([b'\nHello world\n', b'\nHello world\n', b'\nHello world\n'])
 # f.close()
 
-# with open('data.txt', 'a') as f:
+# with open('data_text.txt', 'a') as f:
 #     f.write('Hello world\n')
 #     f.write('Hello world 2\n')
 #     f.write('Hello world 3\n')
@@ -36,7 +36,7 @@
 
 # import os
 #
-# os.rename('data.txt', 'dataTest.txt')
+# os.rename('data_text.txt', 'dataTest.txt')
 
 contacts = {
     'John': {
