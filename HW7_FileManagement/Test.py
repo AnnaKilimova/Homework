@@ -52,8 +52,8 @@ contacts = {
 print(contacts)
 
 contacts.update({
-    'key' : 'value',
-    'Andrii' : 'Anna'
+    'key': 'value',
+    'Andrii': 'Anna'
 })
 
 print(contacts)
@@ -75,8 +75,8 @@ print(contacts)
 # for value in contacts.values():
 #     print(value)
 #
-# new_contacts = contacts.fromkeys([1, 2, 3, 4], 'default')
-# print(new_contacts)
+new_contacts = contacts.fromkeys([1, 2, 3, 4], 'default')
+print(new_contacts)
 
 # new_contacts = dict.fromkeys([1, 2, 3, 4], 'default')
 # print(new_contacts)
