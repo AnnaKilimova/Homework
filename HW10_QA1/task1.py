@@ -12,7 +12,7 @@ print(get_random_string(string_random, length = 7))
 print(get_random_string(string_random, length = 10))
 print(get_random_string(string_random, length = 12))
 
-# Не понимаю (закомментила ниже) почему когда я прописываю параметры как *args, **kwargs функция не работает?
+# Не понимаю (закомментила ниже) почему когда я прописываю параметры как *args, **kwargs функци яне работает?
 
 # def randStr(*args, **kwargs):
 #     return ''.join(random.choice(args) for _ in range(kwargs))
