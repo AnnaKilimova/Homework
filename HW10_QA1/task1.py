@@ -20,7 +20,3 @@ print(get_random_string(string_random, length = 12))
 # string_random = string.ascii_uppercase + string.ascii_lowercase + string.digits
 #
 # print(randStr(string_random, 7))
-
-
-
-
