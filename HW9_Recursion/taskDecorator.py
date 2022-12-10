@@ -1,65 +1,36 @@
+counter = {}
+def call_times(file_name):
+    def inner(func):
+        def wrapper():
+          wrapper.count += 1
+          counter[func.__name__] = wrapper.count
+          with open(file_name, 'w') as f:
+               for func_name, quantity in counter.items():
+                  f.write(f'{func_name} была вызвана {quantity} раза.\n')
+          return func()
 
-def call_times(func):
+        wrapper.count = 0
 
-
-    def inner(*args, **kwargs):
-
-        func(*args, **kwargs)
-
-
-
-        with open('foo.txt', 'a') as f:
-            f.write(f'{func} была вызвана' + ' ' + f'{c} раза.\n')
+        return wrapper
 
     return inner
 
-count = 0
-
-@call_times
+@call_times('foo.txt')
 def foo():
-    global count
+    pass
 
-    count += 1
+@call_times('foo.txt')
+def boo():
+    pass
 
-    return count
+@call_times('calls.txt')
+def doo():
+    pass
 
 foo()
+boo()
 foo()
-
-c = count
-
-# count = 0
-#
-# @call_times
-# def boo():
-#
-#     global count
-#
-#     count += 1
-#
-#     return count
-
-
-# boo()
-# def call_times(func):
-#
-#     def inner(*args, **kwargs):
-#         print(f'{func} была вызвана')
-#         func(*args, **kwargs)
-#         print(f'{count} раза. \n')
-#
-#     return inner
-#
-# count = 0
-#
-# @call_times
-# def foo():
-#
-#     global count
-#
-#     count += 1
-#
-#     return count
-#
-# foo()
-# foo()
+foo()
+boo()
+dict.clear(counter)
+doo()
